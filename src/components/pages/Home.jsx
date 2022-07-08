@@ -4,8 +4,10 @@ import Title from "../Title";
 import Movie from "../Movie";
 
 // TMDB APIs
-const FEATURED_API = process.env.REACT_APP_FEATURED_API_KEY;
-const SEARCH_API = process.env.REACT_APP_SEARCH_API_KEY;
+const FEATURED_API =
+  "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=15ebab19b245374af760476e2d5a8977&page=1";
+const SEARCH_API =
+  "https://api.themoviedb.org/3/search/movie?&api_key=15ebab19b245374af760476e2d5a8977&query=";
 
 function Home() {
   const [movies, setMovies] = useState([]);

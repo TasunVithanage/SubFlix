@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 // TMDB Img API
-const IMG_API = process.env.REACT_APP_IMG_API_KEY;
+const IMG_API = "https://image.tmdb.org/t/p/w1280";
 
 const setVote = (vote) => {
   if (vote >= 8) {

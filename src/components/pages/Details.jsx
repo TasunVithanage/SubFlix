@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 
 // OpenSubtitle API
-const SUB_SEARCH_API = process.env.REACT_APP_SUB_SEARCH_API_KEY;
+const SUB_SEARCH_API =
+  "https://api.opensubtitles.com/api/v1/subtitles?tmdb_id=";
 const SUB_DOWNLOAD_API = "IK9j3r8hqeGISPyGcwnkojLt7AgftdfP";
 
 function Details() {
