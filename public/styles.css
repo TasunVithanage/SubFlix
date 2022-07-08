@@ -1,0 +1,469 @@
+/* ----------------Base and home page---------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #171717;
+  color: #fff;
+
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 600px) {
+  .top-container {
+    background-color: #333232;
+    /* background-image: url(https://img.uhdpaper.com/wallpaper/sonic-the-hedgehog-2-poster-tails-and-sonic-338@1@g-preview.jpg?dl); */
+    height: 500px;
+  }
+}
+
+.top-son {
+  justify-items: center;
+  text-align: center;
+  height: 100%;
+  backdrop-filter: blur(20px);
+}
+
+/* ----Navbar---- */
+
+.navbar-custom {
+  background-color: #282726;
+  color: #fff;
+  border-bottom: 1px;
+  border-bottom-color: #2f2f2f;
+  border-bottom-style: solid;
+}
+
+#nav-brand {
+  color: #e50914;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+/* ----Title---- */
+
+.title-cover {
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .title {
+    font-family: "Koulen", cursive;
+    font-size: 5rem;
+    padding: 200px 0 0;
+    color: #e50914;
+    text-shadow: 0px 4px 3px #171717, 0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-family: "Koulen", cursive;
+    font-size: 3rem;
+    padding: 80px 0 0;
+    color: #e50914;
+    text-shadow: 0px 4px 3px #171717, 0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* .title {
+  padding: 80px 0 0;
+  color: #fff;
+} */
+
+/* ----Search box---- */
+
+.search-cover {
+  display: flex;
+  min-height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container {
+  width: 65%;
+  height: 50px;
+  background-color: #e50914;
+  border-radius: 30px;
+  position: relative;
+  box-shadow: 4px 4px 8px #171717;
+}
+
+.search-input {
+  color: #333232;
+  width: 100%;
+  height: 50px;
+  display: block;
+  border-radius: 30px;
+  padding-left: 20px;
+  font-size: 25px;
+  outline: none;
+  border: none;
+}
+
+.search-button {
+  position: absolute;
+  right: -5px;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  background-color: #e50914;
+  color: white;
+  border-radius: 50%;
+  font-size: 30px;
+  outline: none;
+  border: none;
+}
+
+.without-title {
+  padding-top: 150px;
+}
+
+/* ----Footer---- */
+
+.footer {
+  padding: 12px 0 0px;
+  background-color: #282726;
+
+  margin-top: auto;
+  border-top: 0.5px;
+  border-top-color: #2f2f2f;
+  border-top-style: solid;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #fff;
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.footer .social a:hover {
+  opacity: 0.9;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.footer ul li a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer ul li a:hover {
+  opacity: 1;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+/* ----Movie---- */
+
+.movie-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.movie {
+  background-color: #282726;
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+  width: 300px;
+  border: 4px;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.movie img {
+  object-fit: cover;
+  height: 450px;
+  width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.movie-info h3 {
+  margin: 0;
+}
+
+.movie-over {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  backdrop-filter: blur(15px);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  min-height: 100%;
+  max-height: 100%;
+  transform: translateY(102%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover .movie-over {
+  transform: translateY(0%);
+}
+
+.movie-over p {
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 700;
+}
+
+/* -Movie Rating- */
+
+.tag {
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.tag.greenColor {
+  background-color: green;
+}
+
+.tag.orangeColor {
+  background-color: orange;
+}
+
+.tag.redColor {
+  background-color: red;
+}
+
+/* -Movie button- */
+
+.button-37 {
+  background-color: #e50914;
+  border: 1px solid #e50914;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}
+
+/* ----------------Details page---------------- */
+
+@media (min-width: 600px) {
+  .details {
+    justify-items: center;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details h1 {
+  font-weight: 500;
+}
+
+.details-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.preview-cover {
+  background-color: #333232;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.preview {
+  margin-top: 50px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+@media (min-width: 600px) {
+  .preview-movie {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .preview p {
+    width: 65%;
+    justify-self: flex-end;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 600px) {
+  .preview {
+    text-align: center;
+  }
+  .preview-movie {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .preview p {
+    width: auto;
+    justify-self: flex-end;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+.details-movie {
+  background-color: #1f1e1e;
+  overflow: hidden;
+  position: relative;
+  /* margin: 1rem; */
+  width: 300px;
+  border: 5px;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.details-movie img {
+  object-fit: cover;
+  height: 450px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .download .subtitle {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    word-break: break-word;
+  }
+  .subtitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-self: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .download .subtitle {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .subtitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: baseline;
+    justify-self: center;
+  }
+}
+
+.download {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .download p {
+    font-size: 10px;
+  }
+}
+
+.download .link {
+  text-decoration: none;
+  color: #fff;
+}
